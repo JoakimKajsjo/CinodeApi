@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>One Agency - Sales</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="grid">
+        <button onclick="setCurrentChartOptionsAndChartify('bar', json, averageRateBySalesManager)">Average rate</button>
+        <button onclick="setCurrentChartOptionsAndChartify('bar', json, assignedConsultantsBySales)">Assigned consultants by sales</button>
+        <button onclick="setCurrentChartOptionsAndChartify('bar', json, salesManagerEarnings)">Sales manager earnings</button>
+        <button onclick="setCurrentChartOptionsAndChartify('pie', json, assignedConsultantsByTeams)">Assigned consultants by team</button>
+        <button onclick="setCurrentChartOptionsAndChartify('bar', json, highestHourlyRate)">Highest hourly rate</button>
+    </div>
+    <canvas id="myChart" width="400" height="150"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="chartify.js"></script>
+</body>
+</html>
+
